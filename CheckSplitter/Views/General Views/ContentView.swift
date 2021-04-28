@@ -81,7 +81,7 @@ struct ContentView: View {
                 }){
                     ButtonView(buttonText: "Add Tax & Tip", buttonColor: Color.green)
                 }
-                //button toggle for fullscreen option of the app
+                //button that takes the user to a final display of the app
                 Button(action: {
                     //create final menu that shows how much each user is due and why
                     

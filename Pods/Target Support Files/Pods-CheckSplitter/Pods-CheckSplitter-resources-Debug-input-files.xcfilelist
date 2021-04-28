@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-CheckSplitter/Pods-CheckSplitter-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-UI-Localization.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-Drop-In-Localization.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/BraintreeDropIn/Braintree-UIKit-Localization.bundle
