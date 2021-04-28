@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72C25C23F756369F0C349332 /* Pods_CheckSplitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752C8E711788A0D34B5A3857 /* Pods_CheckSplitter.framework */; };
 		760B0E0325FA75BD000A38C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E0225FA75BD000A38C1 /* AppDelegate.swift */; };
 		760B0E0525FA75BD000A38C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E0425FA75BD000A38C1 /* SceneDelegate.swift */; };
 		760B0E0725FA75BD000A38C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E0625FA75BD000A38C1 /* ContentView.swift */; };
@@ -15,6 +16,21 @@
 		760B0E0F25FA75C0000A38C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760B0E0D25FA75C0000A38C1 /* LaunchScreen.storyboard */; };
 		760B0E1A25FA75C0000A38C1 /* CheckSplitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E1925FA75C0000A38C1 /* CheckSplitterTests.swift */; };
 		760B0E2525FA75C0000A38C1 /* CheckSplitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E2425FA75C0000A38C1 /* CheckSplitterUITests.swift */; };
+		7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C1362630451E00EB0123 /* LinearGradientView.swift */; };
+		7616C1392630485500EB0123 /* FoodCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C1382630485500EB0123 /* FoodCart.swift */; };
+		7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C13A26304BDA00EB0123 /* FoodDisplay.swift */; };
+		761E7099263860CE00DCEA97 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7098263860CE00DCEA97 /* PayView.swift */; };
+		761E709B263860EF00DCEA97 /* PayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709A263860EF00DCEA97 /* PayCard.swift */; };
+		761E70A0263866D200DCEA97 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709F263866D200DCEA97 /* DismissView.swift */; };
+		7647397A2636FC9F0049F380 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764739792636FC9F0049F380 /* ListView.swift */; };
+		76768830262DD6520014DFA4 /* Payer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676882F262DD6520014DFA4 /* Payer.swift */; };
+		76768834262DDC650014DFA4 /* PayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768833262DDC650014DFA4 /* PayerDetail.swift */; };
+		76768836262E07820014DFA4 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768835262E07820014DFA4 /* ItemView.swift */; };
+		76768838262E6E5D0014DFA4 /* PayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768837262E6E5D0014DFA4 /* PayerList.swift */; };
+		76A0272326292638001165CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0272226292638001165CC /* ButtonView.swift */; };
+		76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C55BF32628BA96007982AA /* ImagePicker.swift */; };
+		76D681D3262F1CD30085A887 /* PayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D681D2262F1CD30085A887 /* PayerCard.swift */; };
+		76D681D5262F220C0085A887 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D681D4262F220C0085A887 /* FoodItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187B3B56963896BACE7C6DAD /* Pods-CheckSplitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckSplitter.debug.xcconfig"; path = "Target Support Files/Pods-CheckSplitter/Pods-CheckSplitter.debug.xcconfig"; sourceTree = "<group>"; };
+		617D843D17ACC606FAD6A6A3 /* Pods-CheckSplitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckSplitter.release.xcconfig"; path = "Target Support Files/Pods-CheckSplitter/Pods-CheckSplitter.release.xcconfig"; sourceTree = "<group>"; };
+		752C8E711788A0D34B5A3857 /* Pods_CheckSplitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckSplitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		760B0DFF25FA75BD000A38C1 /* CheckSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		760B0E0225FA75BD000A38C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		760B0E0425FA75BD000A38C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,21 @@
 		760B0E2025FA75C0000A38C1 /* CheckSplitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckSplitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		760B0E2425FA75C0000A38C1 /* CheckSplitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitterUITests.swift; sourceTree = "<group>"; };
 		760B0E2625FA75C0000A38C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7616C1362630451E00EB0123 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		7616C1382630485500EB0123 /* FoodCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCart.swift; sourceTree = "<group>"; };
+		7616C13A26304BDA00EB0123 /* FoodDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplay.swift; sourceTree = "<group>"; };
+		761E7098263860CE00DCEA97 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		761E709A263860EF00DCEA97 /* PayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCard.swift; sourceTree = "<group>"; };
+		761E709F263866D200DCEA97 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
+		764739792636FC9F0049F380 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7676882F262DD6520014DFA4 /* Payer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payer.swift; sourceTree = "<group>"; };
+		76768833262DDC650014DFA4 /* PayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerDetail.swift; sourceTree = "<group>"; };
+		76768835262E07820014DFA4 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		76768837262E6E5D0014DFA4 /* PayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerList.swift; sourceTree = "<group>"; };
+		76A0272226292638001165CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		76C55BF32628BA96007982AA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		76D681D2262F1CD30085A887 /* PayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerCard.swift; sourceTree = "<group>"; };
+		76D681D4262F220C0085A887 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C25C23F756369F0C349332 /* Pods_CheckSplitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CD724FDEAE83D9479C59B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				752C8E711788A0D34B5A3857 /* Pods_CheckSplitter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		760B0DF625FA75BD000A38C1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				760B0E1825FA75C0000A38C1 /* CheckSplitterTests */,
 				760B0E2325FA75C0000A38C1 /* CheckSplitterUITests */,
 				760B0E0025FA75BD000A38C1 /* Products */,
+				BD85A803A24E6C9D8A24B3B1 /* Pods */,
+				5CD724FDEAE83D9479C59B14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +144,9 @@
 		760B0E0125FA75BD000A38C1 /* CheckSplitter */ = {
 			isa = PBXGroup;
 			children = (
-				760B0E0225FA75BD000A38C1 /* AppDelegate.swift */,
-				760B0E0425FA75BD000A38C1 /* SceneDelegate.swift */,
-				760B0E0625FA75BD000A38C1 /* ContentView.swift */,
+				76D681DA262F37280085A887 /* Views */,
+				76D681D9262F37110085A887 /* Delegates */,
+				76D681D8262F34AF0085A887 /* Object Classes */,
 				760B0E0825FA75C0000A38C1 /* Assets.xcassets */,
 				760B0E0D25FA75C0000A38C1 /* LaunchScreen.storyboard */,
 				760B0E1025FA75C0000A38C1 /* Info.plist */,
@@ -136,6 +181,78 @@
 			path = CheckSplitterUITests;
 			sourceTree = "<group>";
 		};
+		761E709C263860F500DCEA97 /* Payer Views */ = {
+			isa = PBXGroup;
+			children = (
+				761E709A263860EF00DCEA97 /* PayCard.swift */,
+				761E7098263860CE00DCEA97 /* PayView.swift */,
+				76D681D2262F1CD30085A887 /* PayerCard.swift */,
+				76768833262DDC650014DFA4 /* PayerDetail.swift */,
+				76768837262E6E5D0014DFA4 /* PayerList.swift */,
+			);
+			path = "Payer Views";
+			sourceTree = "<group>";
+		};
+		761E709D2638611100DCEA97 /* Food Views */ = {
+			isa = PBXGroup;
+			children = (
+				7616C13A26304BDA00EB0123 /* FoodDisplay.swift */,
+				76768835262E07820014DFA4 /* ItemView.swift */,
+				764739792636FC9F0049F380 /* ListView.swift */,
+			);
+			path = "Food Views";
+			sourceTree = "<group>";
+		};
+		761E709E2638612800DCEA97 /* General Views */ = {
+			isa = PBXGroup;
+			children = (
+				76A0272226292638001165CC /* ButtonView.swift */,
+				760B0E0625FA75BD000A38C1 /* ContentView.swift */,
+				761E709F263866D200DCEA97 /* DismissView.swift */,
+				7616C1362630451E00EB0123 /* LinearGradientView.swift */,
+			);
+			path = "General Views";
+			sourceTree = "<group>";
+		};
+		76D681D8262F34AF0085A887 /* Object Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7616C1382630485500EB0123 /* FoodCart.swift */,
+				76D681D4262F220C0085A887 /* FoodItem.swift */,
+				76C55BF32628BA96007982AA /* ImagePicker.swift */,
+				7676882F262DD6520014DFA4 /* Payer.swift */,
+			);
+			path = "Object Classes";
+			sourceTree = "<group>";
+		};
+		76D681D9262F37110085A887 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				760B0E0225FA75BD000A38C1 /* AppDelegate.swift */,
+				760B0E0425FA75BD000A38C1 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		76D681DA262F37280085A887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				761E709E2638612800DCEA97 /* General Views */,
+				761E709D2638611100DCEA97 /* Food Views */,
+				761E709C263860F500DCEA97 /* Payer Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD85A803A24E6C9D8A24B3B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				187B3B56963896BACE7C6DAD /* Pods-CheckSplitter.debug.xcconfig */,
+				617D843D17ACC606FAD6A6A3 /* Pods-CheckSplitter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 760B0E2925FA75C0000A38C1 /* Build configuration list for PBXNativeTarget "CheckSplitter" */;
 			buildPhases = (
+				FA9E6BF99ACBFA92D3C3483A /* [CP] Check Pods Manifest.lock */,
 				760B0DFB25FA75BD000A38C1 /* Sources */,
 				760B0DFC25FA75BD000A38C1 /* Frameworks */,
 				760B0DFD25FA75BD000A38C1 /* Resources */,
@@ -262,14 +380,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA9E6BF99ACBFA92D3C3483A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckSplitter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		760B0DFB25FA75BD000A38C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76768838262E6E5D0014DFA4 /* PayerList.swift in Sources */,
 				760B0E0325FA75BD000A38C1 /* AppDelegate.swift in Sources */,
+				7647397A2636FC9F0049F380 /* ListView.swift in Sources */,
+				761E709B263860EF00DCEA97 /* PayCard.swift in Sources */,
+				76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */,
+				761E70A0263866D200DCEA97 /* DismissView.swift in Sources */,
+				76768834262DDC650014DFA4 /* PayerDetail.swift in Sources */,
+				76768836262E07820014DFA4 /* ItemView.swift in Sources */,
+				7616C1392630485500EB0123 /* FoodCart.swift in Sources */,
+				76A0272326292638001165CC /* ButtonView.swift in Sources */,
+				7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */,
 				760B0E0525FA75BD000A38C1 /* SceneDelegate.swift in Sources */,
+				7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */,
+				76D681D3262F1CD30085A887 /* PayerCard.swift in Sources */,
 				760B0E0725FA75BD000A38C1 /* ContentView.swift in Sources */,
+				761E7099263860CE00DCEA97 /* PayView.swift in Sources */,
+				76768830262DD6520014DFA4 /* Payer.swift in Sources */,
+				76D681D5262F220C0085A887 /* FoodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +590,7 @@
 		};
 		760B0E2A25FA75C0000A38C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187B3B56963896BACE7C6DAD /* Pods-CheckSplitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +610,7 @@
 		};
 		760B0E2B25FA75C0000A38C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617D843D17ACC606FAD6A6A3 /* Pods-CheckSplitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
