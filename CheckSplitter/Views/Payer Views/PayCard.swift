@@ -31,7 +31,7 @@ struct PayCard: View {
                     .minimumScaleFactor(0.0001)
                     .lineLimit(1).frame(width: 235, height: 30, alignment: .center)
                 //displays the amount of money for each payer formatted to two decimal places
-                Text("Due:  \(payer.amount, specifier: "$%.2f")").font(.system(size: 30))
+                Text("Due:  \(payer.amount, specifier: "$%.2f")").font(.system(size: 30)).font(.system(size: 30))
                 .minimumScaleFactor(0.0001)
                 .lineLimit(1).frame(width: 235, height: 30, alignment: .center)
             }

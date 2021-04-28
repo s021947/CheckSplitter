@@ -43,7 +43,6 @@ struct PayView: View {
                     payer.applyTax()
                     //add appriopriate tip amount to each payer
                     payer.addTip(percentTip: tipDouble!)
-                    print(tipDouble!)
                                }
                                }
             }){

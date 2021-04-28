@@ -60,7 +60,8 @@ struct ContentView: View {
                     NavigationLink(destination: ItemView(item: $item, cart: $cart, payers: $payers), tag: "ItemView", selection: $selection) { EmptyView()}
                 //nagivation link to ItemView if the tag has the appriopriate value
                     NavigationLink(destination: PayView(payers: $payers), tag: "PayView", selection: $selection) { EmptyView()}
-
+                //nagivation link to ItemView if the tag has the appriopriate value
+                NavigationLink(destination: EndView(), tag: "EndView", selection: $selection) { EmptyView()}
                 
                 VStack(spacing: 25){
                 //button that leads to PayerDetail
@@ -81,10 +82,9 @@ struct ContentView: View {
                 }){
                     ButtonView(buttonText: "Add Tax & Tip", buttonColor: Color.green)
                 }
-                //button that takes the user to a final display of the app
+                //button that leads to EndView
                 Button(action: {
-                    //create final menu that shows how much each user is due and why
-                    
+                    self.selection = "PayView"
                 }){
                     ButtonView(buttonText: "Final Info", buttonColor: Color.yellow)
                     }
