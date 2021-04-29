@@ -84,7 +84,7 @@ struct ContentView: View {
                 }
                 //button that leads to EndView
                 Button(action: {
-                    self.selection = "PayView"
+                    self.selection = "EndView"
                 }){
                     ButtonView(buttonText: "Final Info", buttonColor: Color.yellow)
                     }

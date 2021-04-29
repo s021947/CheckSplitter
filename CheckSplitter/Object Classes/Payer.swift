@@ -15,17 +15,16 @@ class Payer: ObservableObject{
 @Published var image : String
 @Published var applepayid: String
 @Published var amount: Double
+    @Published var selected: Bool
 
 //initialize a Payer
-    init(name : String = "Krzysztof Jarocha", image: String = "person", applepayid : String = "2061-901", amount : Double = 0.0){
+    init(name : String = "Krzysztof Jarocha", image: String = "person", applepayid : String = "2061-901", amount : Double = 0.0, selected: Bool = false){
 
     self.name = name
     self.image = image
     self.applepayid = applepayid
     self.amount = amount
-
-        
-    
+    self.selected = selected
 }
     func getName() -> String {
         return self.name
@@ -43,6 +42,10 @@ class Payer: ObservableObject{
     //add appropriate tip amounts to the amount the payer is paying for their food items and lets payer choose how much tip they would like to give
     func addTip(percentTip: Double){
         self.amount += (percentTip/100)*self.amount//sets the tipped portion of the users amount and adds it to the amount of money due
+    }
+    //function that toggles the selected variable
+    func select(){
+        self.selected.toggle()
     }
     
 }

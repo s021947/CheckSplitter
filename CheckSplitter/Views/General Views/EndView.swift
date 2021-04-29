@@ -15,6 +15,9 @@ struct EndView: View {
             LinearGradientView()
             ScrollView{
                 VStack(spacing: 20){
+                    Text("")
+                    Text("")
+                    Spacer()
                     Text("Show all Payers and how much they owe and for what Food Items, allow to go back a screen or restart the entire process. ALso allow to save the digital recepit of the bill to photos or send to friends").foregroundColor(Color.white).font(.system(size: 36, weight: .semibold))
             //returns to home screen
             DismissView()
