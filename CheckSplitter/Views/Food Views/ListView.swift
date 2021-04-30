@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+
+
 //creates a list of all the payers and lets the users assign FoodItems to Payers
 struct ListView: View {
     //necessary bindings
@@ -14,10 +16,13 @@ struct ListView: View {
     @Binding var price: Double
 
     var body: some View {
-        ZStack{
-
-        LinearGradientView()
+        
         ScrollView(){
+            ZStack{
+            //creates background for the edges of the view
+            LinearGradientView()
+
+            
             VStack(spacing: 20){
                 //displays all the names of the current payers, lets the user select which payer they want to pay for the specified food item
                 ForEach(payers.indices, id: \.self) { i in
@@ -49,11 +54,12 @@ struct ListView: View {
             DismissView(text: "Go back")
 
             }
+            }.offset(y: -5)
+        
         }.background(LinearGradientView()).frame(maxWidth: .infinity, maxHeight: .infinity)//creates a infinite width frame to allow for as many users to be viewed as possible
-        }
-        }
+       
 }
-
+}
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView(payers: Binding.constant([Payer]()), price: Binding.constant(Double()))

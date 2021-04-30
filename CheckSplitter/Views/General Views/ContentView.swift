@@ -19,7 +19,7 @@ struct ContentView: View {
     @State private var selection: String? = nil
 
     //creates all of the necessary variables for the project, ContentView is single source of truth for all variables
-    @State var payer: Payer = Payer()
+    @ObservedObject var payer: Payer = Payer()
     @State var payers: [Payer] = [Payer(), Payer(), Payer()]
     @State var cart: [FoodItem] = [FoodItem(), FoodItem(), FoodItem()]
     @State var item: FoodItem = FoodItem()

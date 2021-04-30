@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		761E709B263860EF00DCEA97 /* PayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709A263860EF00DCEA97 /* PayCard.swift */; };
 		761E70A0263866D200DCEA97 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709F263866D200DCEA97 /* DismissView.swift */; };
 		763909CF2639D90600E301F4 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909CE2639D90600E301F4 /* EndView.swift */; };
+		763909D1263B2D3F00E301F4 /* FinalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909D0263B2D3F00E301F4 /* FinalCard.swift */; };
 		7647397A2636FC9F0049F380 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764739792636FC9F0049F380 /* ListView.swift */; };
 		76768830262DD6520014DFA4 /* Payer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676882F262DD6520014DFA4 /* Payer.swift */; };
 		76768834262DDC650014DFA4 /* PayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768833262DDC650014DFA4 /* PayerDetail.swift */; };
@@ -76,6 +77,7 @@
 		761E709A263860EF00DCEA97 /* PayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCard.swift; sourceTree = "<group>"; };
 		761E709F263866D200DCEA97 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		763909CE2639D90600E301F4 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		763909D0263B2D3F00E301F4 /* FinalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCard.swift; sourceTree = "<group>"; };
 		764739792636FC9F0049F380 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7676882F262DD6520014DFA4 /* Payer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payer.swift; sourceTree = "<group>"; };
 		76768833262DDC650014DFA4 /* PayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerDetail.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		761E709C263860F500DCEA97 /* Payer Views */ = {
 			isa = PBXGroup;
 			children = (
+				763909D0263B2D3F00E301F4 /* FinalCard.swift */,
 				761E709A263860EF00DCEA97 /* PayCard.swift */,
 				761E7098263860CE00DCEA97 /* PayView.swift */,
 				76D681D2262F1CD30085A887 /* PayerCard.swift */,
@@ -423,6 +426,7 @@
 				76768836262E07820014DFA4 /* ItemView.swift in Sources */,
 				7616C1392630485500EB0123 /* FoodCart.swift in Sources */,
 				76A0272326292638001165CC /* ButtonView.swift in Sources */,
+				763909D1263B2D3F00E301F4 /* FinalCard.swift in Sources */,
 				7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */,
 				760B0E0525FA75BD000A38C1 /* SceneDelegate.swift in Sources */,
 				763909CF2639D90600E301F4 /* EndView.swift in Sources */,
