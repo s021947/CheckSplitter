@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,15 +24,18 @@
 		761E70A0263866D200DCEA97 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709F263866D200DCEA97 /* DismissView.swift */; };
 		763909CF2639D90600E301F4 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909CE2639D90600E301F4 /* EndView.swift */; };
 		763909D1263B2D3F00E301F4 /* FinalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909D0263B2D3F00E301F4 /* FinalCard.swift */; };
+		763909DB263C59A500E301F4 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909DA263C59A500E301F4 /* DropDown.swift */; };
 		7647397A2636FC9F0049F380 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764739792636FC9F0049F380 /* ListView.swift */; };
 		76768830262DD6520014DFA4 /* Payer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676882F262DD6520014DFA4 /* Payer.swift */; };
-		76768834262DDC650014DFA4 /* PayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768833262DDC650014DFA4 /* PayerDetail.swift */; };
 		76768836262E07820014DFA4 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768835262E07820014DFA4 /* ItemView.swift */; };
-		76768838262E6E5D0014DFA4 /* PayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768837262E6E5D0014DFA4 /* PayerList.swift */; };
 		76A0272326292638001165CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0272226292638001165CC /* ButtonView.swift */; };
 		76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C55BF32628BA96007982AA /* ImagePicker.swift */; };
-		76D681D3262F1CD30085A887 /* PayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D681D2262F1CD30085A887 /* PayerCard.swift */; };
 		76D681D5262F220C0085A887 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D681D4262F220C0085A887 /* FoodItem.swift */; };
+		76E5425A263F747900D93FD7 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E54259263F747900D93FD7 /* ScanButton.swift */; };
+		76E5425C263F754000D93FD7 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5425B263F754000D93FD7 /* ScanView.swift */; };
+		76E5425E263F797B00D93FD7 /* OCRTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5425D263F797B00D93FD7 /* OCRTextView.swift */; };
+		76E54260263F7F6D00D93FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5425F263F7F6D00D93FD7 /* ViewController.swift */; };
+		76E54262263FA79E00D93FD7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E54261263FA79E00D93FD7 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,15 +81,18 @@
 		761E709F263866D200DCEA97 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		763909CE2639D90600E301F4 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		763909D0263B2D3F00E301F4 /* FinalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCard.swift; sourceTree = "<group>"; };
+		763909DA263C59A500E301F4 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		764739792636FC9F0049F380 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7676882F262DD6520014DFA4 /* Payer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payer.swift; sourceTree = "<group>"; };
-		76768833262DDC650014DFA4 /* PayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerDetail.swift; sourceTree = "<group>"; };
 		76768835262E07820014DFA4 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
-		76768837262E6E5D0014DFA4 /* PayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerList.swift; sourceTree = "<group>"; };
 		76A0272226292638001165CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		76C55BF32628BA96007982AA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		76D681D2262F1CD30085A887 /* PayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerCard.swift; sourceTree = "<group>"; };
 		76D681D4262F220C0085A887 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		76E54259263F747900D93FD7 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
+		76E5425B263F754000D93FD7 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		76E5425D263F797B00D93FD7 /* OCRTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRTextView.swift; sourceTree = "<group>"; };
+		76E5425F263F7F6D00D93FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76E54261263FA79E00D93FD7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,9 +197,6 @@
 				763909D0263B2D3F00E301F4 /* FinalCard.swift */,
 				761E709A263860EF00DCEA97 /* PayCard.swift */,
 				761E7098263860CE00DCEA97 /* PayView.swift */,
-				76D681D2262F1CD30085A887 /* PayerCard.swift */,
-				76768833262DDC650014DFA4 /* PayerDetail.swift */,
-				76768837262E6E5D0014DFA4 /* PayerList.swift */,
 			);
 			path = "Payer Views";
 			sourceTree = "<group>";
@@ -215,7 +218,9 @@
 				760B0E0625FA75BD000A38C1 /* ContentView.swift */,
 				763909CE2639D90600E301F4 /* EndView.swift */,
 				761E709F263866D200DCEA97 /* DismissView.swift */,
+				763909DA263C59A500E301F4 /* DropDown.swift */,
 				7616C1362630451E00EB0123 /* LinearGradientView.swift */,
+				76E54261263FA79E00D93FD7 /* SettingView.swift */,
 			);
 			path = "General Views";
 			sourceTree = "<group>";
@@ -243,11 +248,23 @@
 		76D681DA262F37280085A887 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				76E54258263F728200D93FD7 /* OCR Views */,
 				761E709E2638612800DCEA97 /* General Views */,
 				761E709D2638611100DCEA97 /* Food Views */,
 				761E709C263860F500DCEA97 /* Payer Views */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		76E54258263F728200D93FD7 /* OCR Views */ = {
+			isa = PBXGroup;
+			children = (
+				76E54259263F747900D93FD7 /* ScanButton.swift */,
+				76E5425B263F754000D93FD7 /* ScanView.swift */,
+				76E5425D263F797B00D93FD7 /* OCRTextView.swift */,
+				76E5425F263F7F6D00D93FD7 /* ViewController.swift */,
+			);
+			path = "OCR Views";
 			sourceTree = "<group>";
 		};
 		BD85A803A24E6C9D8A24B3B1 /* Pods */ = {
@@ -416,13 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76768838262E6E5D0014DFA4 /* PayerList.swift in Sources */,
+				76E54260263F7F6D00D93FD7 /* ViewController.swift in Sources */,
 				760B0E0325FA75BD000A38C1 /* AppDelegate.swift in Sources */,
 				7647397A2636FC9F0049F380 /* ListView.swift in Sources */,
 				761E709B263860EF00DCEA97 /* PayCard.swift in Sources */,
 				76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */,
+				76E5425C263F754000D93FD7 /* ScanView.swift in Sources */,
+				763909DB263C59A500E301F4 /* DropDown.swift in Sources */,
 				761E70A0263866D200DCEA97 /* DismissView.swift in Sources */,
-				76768834262DDC650014DFA4 /* PayerDetail.swift in Sources */,
 				76768836262E07820014DFA4 /* ItemView.swift in Sources */,
 				7616C1392630485500EB0123 /* FoodCart.swift in Sources */,
 				76A0272326292638001165CC /* ButtonView.swift in Sources */,
@@ -430,9 +448,11 @@
 				7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */,
 				760B0E0525FA75BD000A38C1 /* SceneDelegate.swift in Sources */,
 				763909CF2639D90600E301F4 /* EndView.swift in Sources */,
+				76E5425E263F797B00D93FD7 /* OCRTextView.swift in Sources */,
 				7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */,
-				76D681D3262F1CD30085A887 /* PayerCard.swift in Sources */,
 				760B0E0725FA75BD000A38C1 /* ContentView.swift in Sources */,
+				76E54262263FA79E00D93FD7 /* SettingView.swift in Sources */,
+				76E5425A263F747900D93FD7 /* ScanButton.swift in Sources */,
 				761E7099263860CE00DCEA97 /* PayView.swift in Sources */,
 				76768830262DD6520014DFA4 /* Payer.swift in Sources */,
 				76D681D5262F220C0085A887 /* FoodItem.swift in Sources */,

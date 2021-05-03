@@ -17,29 +17,30 @@ struct PayCard: View {
     
     var body: some View {
         ZStack{
-        HStack{
-            //creates an image for each of the payers
-            Image(payer.image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 100, height: 100, alignment: .center)
-                .clipped()
-            //displays the name of the payer
-            VStack(alignment: .leading){
-                Text(payer.name).font(.system(size: 30))
-                    .foregroundColor(.black)
-                    .minimumScaleFactor(0.0001)
-                    .lineLimit(1).frame(width: 235, height: 30, alignment: .center)
-                //displays the amount of money for each payer formatted to two decimal places
-                Text("Due:  \(payer.amount, specifier: "$%.2f")").font(.system(size: 30)).font(.system(size: 30))
-                .minimumScaleFactor(0.0001)
-                .lineLimit(1).frame(width: 235, height: 30, alignment: .center)
-            }
-            
-        }.background(Color.white.opacity(0.25)).cornerRadius(20).cornerRadius(20)
-            .padding(.horizontal, 10)//customizes backgorund of each PayCard
+       Rectangle()
+         .fill(Color.gray)
+         .frame(width: UIScreen.main.bounds.width, height: 122)
+         
+         Rectangle()
+         .fill(Color.white)
+         .frame(width: UIScreen.main.bounds.width, height: 120)
+         
+            VStack{
+             Button(action: {
+                self.payers.remove(at: self.payer.index)
+             }) {
+                 Image(systemName: "minus").resizable().frame(width: 15, height: 3, alignment: .top).padding(.top,15).padding(.leading,350)
+             }.buttonStyle(PlainButtonStyle()).foregroundColor(Color(red: 255/255, green: 178/240, blue: 134/255))
+         HStack{
+             
+            TextField("Payer Name", text: $payer.name).font(.custom("Helvetica Neue", size: 30)).alignmentGuide(.leading) { d in d[.leading] }.foregroundColor(Color.gray).padding(.leading, 30)
+             
+            Text("$ \(payer.amount, specifier: "%.2f")").font(.custom("Helvetica Neue Bold", size: 30)).alignmentGuide(.leading) { d in d[.leading] }.padding(.trailing, 50).foregroundColor(Color(red: 237/240, green: 164/240, blue: 172/240)).padding(.bottom,25)
+             
+         }
         }
         }
+}
 }
 
 struct PayCard_Previews: PreviewProvider {

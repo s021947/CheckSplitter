@@ -21,7 +21,8 @@ struct DismissView: View {
             self.presentationMode.wrappedValue.dismiss()
         }){
         ButtonView(buttonText: text, buttonColor: Color.blue)
-        }    }
+        }
+    }
 }
 
 struct DismissView_Previews: PreviewProvider {

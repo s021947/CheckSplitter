@@ -23,78 +23,77 @@ struct ContentView: View {
     @State var payers: [Payer] = [Payer(), Payer(), Payer()]
     @State var cart: [FoodItem] = [FoodItem(), FoodItem(), FoodItem()]
     @State var item: FoodItem = FoodItem()
-    
+    //States for Setting View
+    @State var modal = false
+    @State var taxEvenSplit = true
+    @State var tipEvenSplit = true
     var body: some View {
-        NavigationView{
-            ZStack(alignment: .top){
-           
-            //creates a gradient background
-            LinearGradientView()
-                
-                VStack(alignment: .center) {
-                //button that allows user to select or take a picture of the bill
-                Spacer()
-                //display the actual image of the bill, if no image then show a placeholder photo
-                Image(uiImage: billimage ?? UIImage(named: "placeholder")!).resizable().frame(width: 256, height: 256).clipShape(Circle())
-                
-                Button("Choose a Picture"){
-                    self.showSheet = true
-                    }.padding().foregroundColor(Color.white).font(.system(size: 32, weight: .semibold, design: .default)).actionSheet(isPresented: $showSheet) {
-                                      ActionSheet(title: Text("Select Photo"), message: Text("Choose"), buttons: [//when the user presses the button they will get the option to either tkae a photo or use one from the photo library
-                                          .default(Text("Photo Library")) {
-                                              self.showImagePicker = true
-                                              self.sourceType = .photoLibrary
-                                          },//depending on the choice selected, set the source type to the choice chosen
-                                          .default(Text("Camera")) {
-                                              self.showImagePicker = true
-                                              self.sourceType = .camera
-                                          },
-                                          .cancel()//gives cancel option
-                                      ])
-                }.sheet(isPresented: $showImagePicker){
-                    ImagePicker(billimage: self.$billimage, isShown: self.$showImagePicker, sourceType: self.sourceType)//allows the user to select an image by calling the ImagePicker file
-                }
-                //nagivation link to PayerList if the tag has the appriopriate value
-                    NavigationLink(destination: PayerList(payers: $payers), tag: "PayerList", selection: $selection) { EmptyView()}
-                //nagivation link to ItemView if the tag has the appriopriate value
-                    NavigationLink(destination: ItemView(item: $item, cart: $cart, payers: $payers), tag: "ItemView", selection: $selection) { EmptyView()}
-                //nagivation link to ItemView if the tag has the appriopriate value
-                    NavigationLink(destination: PayView(payers: $payers), tag: "PayView", selection: $selection) { EmptyView()}
-                //nagivation link to ItemView if the tag has the appriopriate value
-                NavigationLink(destination: EndView(), tag: "EndView", selection: $selection) { EmptyView()}
-                
-                VStack(spacing: 25){
-                //button that leads to PayerDetail
-                Button(action: {
-                    self.selection = "PayerList"
-                }){
-                ButtonView(buttonText: "Enter Payer Info", buttonColor: Color.blue)
-                }
-                //button that leads to ItemView
-                Button(action: {
-                    self.selection = "ItemView"
-                }){
-                ButtonView(buttonText: "Assign Items", buttonColor: Color.black)
-                }
-                //button that leads to PayView
-                Button(action: {
-                    self.selection = "PayView"
-                }){
-                    ButtonView(buttonText: "Add Tax & Tip", buttonColor: Color.green)
-                }
-                //button that leads to EndView
-                Button(action: {
-                    self.selection = "EndView"
-                }){
-                    ButtonView(buttonText: "Final Info", buttonColor: Color.yellow)
+        ZStack{
+            VStack(spacing: 20){
+                    //Custom top bar of the that dispays the welcome text and a seeting icon which leads to a settings view
+                     HStack{
+                        //top text
+                         Text("My Order").bold().font(.custom("Helvetica Neue", size: 22)).multilineTextAlignment(.leading).padding(.trailing, 150).padding(.top, 15).foregroundColor(Color(red: 85 / 255, green: 85 / 255, blue: 85/255))
+                        //text to indicate the gear is a settings option
+                        Text("Settings:")
+                         //Custom Gear Icon that leads to Settings View
+                         Button(action: {
+                            print("settings button pressed")
+                            self.modal.toggle()
+                         }) {
+                            Image("gear").resizable().frame(width: 32.0, height: 32.0).padding(.top,15).padding(.trailing,10).foregroundColor(Color.black)
+                         }.sheet(isPresented: $modal){
+                            SettingView(taxEvenSplit: self.$taxEvenSplit, tipEvenSplit: self.$tipEvenSplit, modal: self.$modal)
+                            //.clearModalBackground()
+                         }
+                     }
+                    //Rectangle Line that seperates view header from the list of payers
+                     Rectangle()
+                         .fill(Color(red: 170 / 255, green: 170 / 255, blue: 170/255))
+                         .frame(width: UIScreen.main.bounds.width-38, height: 1)
+                     
+                    //ScrooView of all PayCards that shows each of the payers and allows for the addition of new payers
+                     ScrollView{
+                        //display each payer in the Payer array
+                     ForEach(0..<payers.count, id: \.self) { i in
+                        PayCard(payer: self.$payers[i], payers: self.$payers)
+                     }
                     }
+                    //when plus icon is pressed add new default payer to the list of existing payers
+                     Button(action: {
+                        self.payers.append(Payer(name: "", amount: 0.0, index: self.payers.count))                     })
+                     {
+                         Image("plusIcon").resizable().scaledToFit().frame(width: 44, height: 44).padding(.top, 20)
+                     }.buttonStyle(PlainButtonStyle())
+                    
+                     Spacer()
+                     //camera button that leads to Image scan and OCR recognition code when pressed
+                     Button(action: {
+                        //ViewController()
+                     }) {
+                         Image("picButton").resizable().scaledToFit().frame(width: 100, height: 100).padding(.top, 20)
+                     }.buttonStyle(PlainButtonStyle())
+                     
+                     
+        
+                 }
+        }
+                    
+                //nagivation link to PayerList if the tag has the appriopriate value
+                   // NavigationLink(destination: PayerList(payers: $payers), tag: "PayerList", selection: $selection) { EmptyView()}
+                //nagivation link to ItemView if the tag has the appriopriate value
+                  //  NavigationLink(destination: ItemView(item: $item, cart: $cart, payers: $payers), tag: "ItemView", selection: $selection) { EmptyView()}
+                //nagivation link to ItemView if the tag has the appriopriate value
+                   // NavigationLink(destination: PayView(payers: $payers), tag: "PayView", selection: $selection) { EmptyView()}
+                //nagivation link to ItemView if the tag has the appriopriate value
+                   // NavigationLink(destination: EndView(), tag: "EndView", selection: $selection) { EmptyView()}
                 
                 }
-                }.navigationBarTitle("Check Splitter", displayMode: .automatic).navigationBarHidden(true)//hide navigation bar to allow for cleaner formating
-    }
-        }
+                
 }
-}
+    
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

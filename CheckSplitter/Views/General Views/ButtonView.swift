@@ -16,11 +16,11 @@ struct ButtonView: View {
     var body: some View {
         ZStack{
             //creates a round rectangle button apperance for each button in the app
-            RoundedRectangle(cornerRadius: 10).frame(width: 300, height: 75).foregroundColor(Color.gray)
-            Text(buttonText).font(.system(size: 32, weight: .semibold, design: .default)).foregroundColor(Color.white)
+            RoundedRectangle(cornerRadius: 10).frame(width: 250, height: 50).foregroundColor(Color.gray)
+            Text(buttonText).font(.system(size: 24, weight: .semibold, design: .default)).foregroundColor(Color.white)
             
             //adds the left side colored part of the button for customization
-            Corner().trim(from: 0.41, to: 0.59).foregroundColor(buttonColor).frame(width: 300, height: 75)
+            //Corner().trim(from: 0.41, to: 0.59).foregroundColor(buttonColor).frame(width: 250, height: 50)
             
 
         }
