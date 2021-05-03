@@ -29,7 +29,7 @@ struct ContentView: View {
     @State var tipEvenSplit = true
     var body: some View {
         ZStack{
-            VStack(spacing: 20){
+            VStack(spacing: 10){
                     //Custom top bar of the that dispays the welcome text and a seeting icon which leads to a settings view
                      HStack{
                         //top text
@@ -47,16 +47,13 @@ struct ContentView: View {
                             //.clearModalBackground()
                          }
                      }
-                    //Rectangle Line that seperates view header from the list of payers
-                     Rectangle()
-                         .fill(Color(red: 170 / 255, green: 170 / 255, blue: 170/255))
-                         .frame(width: UIScreen.main.bounds.width-38, height: 1)
+                    //Divider Line that seperates view header from the list of pay cards
+                Divider().padding(.bottom)
                      
                     //ScrooView of all PayCards that shows each of the payers and allows for the addition of new payers
                      ScrollView{
-                        //display each payer in the Payer array
                      ForEach(0..<payers.count, id: \.self) { i in
-                        PayCard(payer: self.$payers[i], payers: self.$payers)
+                        AccordionView(payer: self.$payers[i], payers: self.$payers, cart: self.$cart)
                      }
                     }
                     //when plus icon is pressed add new default payer to the list of existing payers

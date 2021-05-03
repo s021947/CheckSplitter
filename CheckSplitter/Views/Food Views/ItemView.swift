@@ -11,7 +11,6 @@ import SwiftUI
 //Allows user to assign people to each bill item, displays price as well
 struct ItemView: View {
     //create bindings for necessary objects to display and assign all of the needed objects
-    @Binding var item: FoodItem
     @Binding var cart: [FoodItem]
     @Binding var payers: [Payer]
     //state that will allow the user to be taken to the correct ListView based on which assign button they click
@@ -31,7 +30,7 @@ struct ItemView: View {
                 Text("")
                 Spacer()
                 ForEach(cart.indices, id: \.self) { i in
-                    FoodDisplay(item: self.$cart[i], selection: self.$selection, price: self.$price)//loops through every index of the contacts array and for every index i create a new card with information from contacts array
+                    FoodDisplay(item: self.$cart[i])//loops through every index of the contacts array and for every index i create a new card with information from contacts array
                 }
                 //NavigationLink that takes the user to the ListView of Food Items
                 NavigationLink(destination: ListView(payers: $payers, price: self.$price), tag: "ListView", selection: self.$selection) { EmptyView()}
@@ -39,12 +38,12 @@ struct ItemView: View {
                 NavigationLink(destination: ContentView(), tag: "ContentView", selection: self.$selection) { EmptyView()}
             Spacer()
             //returns user to home screen
-            Button(action: {
+            //Button(action: {
                 //self.selection = "ContentView"
-                self.presentationMode.wrappedValue.dismiss()
-            }){
-            ButtonView(buttonText: "Home Screen", buttonColor: Color.blue)
-            }
+                //self.presentationMode.wrappedValue.dismiss()
+            //}){
+            //ButtonView(buttonText: "Home Screen", buttonColor: Color.blue)
+            //}
         }
             }.background(LinearGradientView()).frame(maxWidth: .infinity, maxHeight: .infinity)
         }
@@ -54,6 +53,6 @@ struct ItemView: View {
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(item: Binding.constant(FoodItem()), cart: Binding.constant([FoodItem]()), payers: Binding.constant([Payer]()))
+        ItemView(cart: Binding.constant([FoodItem]()), payers: Binding.constant([Payer]()))
     }
 }

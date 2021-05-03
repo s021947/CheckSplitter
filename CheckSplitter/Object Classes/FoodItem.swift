@@ -13,13 +13,12 @@ struct FoodItem{
 //all properties of a food object
 var name : String
 var price: Double
-var image: String
+
     
     //initialize a FoodItem object 
-    init(name: String = "Chicken", price: Double = 29.5, image: String = "logo"){
+    init(name: String = "Chicken", price: Double = 29.5){
         self.name = name
         self.price = price
-        self.image = image
     }
 
 

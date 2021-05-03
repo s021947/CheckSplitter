@@ -17,14 +17,13 @@
 		760B0E1A25FA75C0000A38C1 /* CheckSplitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E1925FA75C0000A38C1 /* CheckSplitterTests.swift */; };
 		760B0E2525FA75C0000A38C1 /* CheckSplitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B0E2425FA75C0000A38C1 /* CheckSplitterUITests.swift */; };
 		7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C1362630451E00EB0123 /* LinearGradientView.swift */; };
-		7616C1392630485500EB0123 /* FoodCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C1382630485500EB0123 /* FoodCart.swift */; };
 		7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C13A26304BDA00EB0123 /* FoodDisplay.swift */; };
 		761E7099263860CE00DCEA97 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7098263860CE00DCEA97 /* PayView.swift */; };
 		761E709B263860EF00DCEA97 /* PayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709A263860EF00DCEA97 /* PayCard.swift */; };
 		761E70A0263866D200DCEA97 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709F263866D200DCEA97 /* DismissView.swift */; };
-		763909CF2639D90600E301F4 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909CE2639D90600E301F4 /* EndView.swift */; };
+		76200A27264035E100E36AE4 /* CollapsibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76200A26264035E100E36AE4 /* CollapsibleView.swift */; };
+		76200A2926403BB100E36AE4 /* AccordionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76200A2826403BB100E36AE4 /* AccordionView.swift */; };
 		763909D1263B2D3F00E301F4 /* FinalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909D0263B2D3F00E301F4 /* FinalCard.swift */; };
-		763909DB263C59A500E301F4 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763909DA263C59A500E301F4 /* DropDown.swift */; };
 		7647397A2636FC9F0049F380 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764739792636FC9F0049F380 /* ListView.swift */; };
 		76768830262DD6520014DFA4 /* Payer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676882F262DD6520014DFA4 /* Payer.swift */; };
 		76768836262E07820014DFA4 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768835262E07820014DFA4 /* ItemView.swift */; };
@@ -74,14 +73,13 @@
 		760B0E2425FA75C0000A38C1 /* CheckSplitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitterUITests.swift; sourceTree = "<group>"; };
 		760B0E2625FA75C0000A38C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7616C1362630451E00EB0123 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
-		7616C1382630485500EB0123 /* FoodCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCart.swift; sourceTree = "<group>"; };
 		7616C13A26304BDA00EB0123 /* FoodDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplay.swift; sourceTree = "<group>"; };
 		761E7098263860CE00DCEA97 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
 		761E709A263860EF00DCEA97 /* PayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCard.swift; sourceTree = "<group>"; };
 		761E709F263866D200DCEA97 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
-		763909CE2639D90600E301F4 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		76200A26264035E100E36AE4 /* CollapsibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleView.swift; sourceTree = "<group>"; };
+		76200A2826403BB100E36AE4 /* AccordionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionView.swift; sourceTree = "<group>"; };
 		763909D0263B2D3F00E301F4 /* FinalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCard.swift; sourceTree = "<group>"; };
-		763909DA263C59A500E301F4 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		764739792636FC9F0049F380 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7676882F262DD6520014DFA4 /* Payer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payer.swift; sourceTree = "<group>"; };
 		76768835262E07820014DFA4 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -214,11 +212,11 @@
 		761E709E2638612800DCEA97 /* General Views */ = {
 			isa = PBXGroup;
 			children = (
+				76200A2826403BB100E36AE4 /* AccordionView.swift */,
 				76A0272226292638001165CC /* ButtonView.swift */,
+				76200A26264035E100E36AE4 /* CollapsibleView.swift */,
 				760B0E0625FA75BD000A38C1 /* ContentView.swift */,
-				763909CE2639D90600E301F4 /* EndView.swift */,
 				761E709F263866D200DCEA97 /* DismissView.swift */,
-				763909DA263C59A500E301F4 /* DropDown.swift */,
 				7616C1362630451E00EB0123 /* LinearGradientView.swift */,
 				76E54261263FA79E00D93FD7 /* SettingView.swift */,
 			);
@@ -228,7 +226,6 @@
 		76D681D8262F34AF0085A887 /* Object Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7616C1382630485500EB0123 /* FoodCart.swift */,
 				76D681D4262F220C0085A887 /* FoodItem.swift */,
 				76C55BF32628BA96007982AA /* ImagePicker.swift */,
 				7676882F262DD6520014DFA4 /* Payer.swift */,
@@ -439,23 +436,22 @@
 				761E709B263860EF00DCEA97 /* PayCard.swift in Sources */,
 				76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */,
 				76E5425C263F754000D93FD7 /* ScanView.swift in Sources */,
-				763909DB263C59A500E301F4 /* DropDown.swift in Sources */,
 				761E70A0263866D200DCEA97 /* DismissView.swift in Sources */,
 				76768836262E07820014DFA4 /* ItemView.swift in Sources */,
-				7616C1392630485500EB0123 /* FoodCart.swift in Sources */,
 				76A0272326292638001165CC /* ButtonView.swift in Sources */,
 				763909D1263B2D3F00E301F4 /* FinalCard.swift in Sources */,
 				7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */,
 				760B0E0525FA75BD000A38C1 /* SceneDelegate.swift in Sources */,
-				763909CF2639D90600E301F4 /* EndView.swift in Sources */,
 				76E5425E263F797B00D93FD7 /* OCRTextView.swift in Sources */,
 				7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */,
 				760B0E0725FA75BD000A38C1 /* ContentView.swift in Sources */,
 				76E54262263FA79E00D93FD7 /* SettingView.swift in Sources */,
 				76E5425A263F747900D93FD7 /* ScanButton.swift in Sources */,
 				761E7099263860CE00DCEA97 /* PayView.swift in Sources */,
+				76200A27264035E100E36AE4 /* CollapsibleView.swift in Sources */,
 				76768830262DD6520014DFA4 /* Payer.swift in Sources */,
 				76D681D5262F220C0085A887 /* FoodItem.swift in Sources */,
+				76200A2926403BB100E36AE4 /* AccordionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

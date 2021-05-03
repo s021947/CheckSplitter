@@ -23,9 +23,9 @@ struct PayView: View {
                 Text("")
                 Text("")
                 Spacer()
-                ForEach(payers.indices, id: \.self) { i in
-                    PayCard(payer: self.$payers[i], payers: self.$payers)//loops through every index of the payers array and for every index i create a paycard with information from payers array
-                }
+                //ForEach(payers.indices, id: \.self) { i in
+                    //PayCard(payer: self.$payers[i], payers: self.$payers)//loops through every index of the payers array and for every index i create a paycard with information from payers array
+                //}
             Spacer()
             if !self.addTaxTip{
                 //input form for the pertage tip that the payers want to give
