@@ -20,34 +20,17 @@ struct ItemView: View {
     //Environment variable used to dismiss the view
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
-        NavigationView{
         ZStack{
         //creates gradient background
-            LinearGradientView()
+            //LinearGradientView()
             ScrollView(){
-            VStack(spacing: 20){
-                Text("")
-                Text("")
-                Spacer()
+            VStack{
                 ForEach(cart.indices, id: \.self) { i in
                     FoodDisplay(item: self.$cart[i])//loops through every index of the contacts array and for every index i create a new card with information from contacts array
                 }
-                //NavigationLink that takes the user to the ListView of Food Items
-                NavigationLink(destination: ListView(payers: $payers, price: self.$price), tag: "ListView", selection: self.$selection) { EmptyView()}
-                //NavigationLink that takes the user back to ContentView
-                NavigationLink(destination: ContentView(), tag: "ContentView", selection: self.$selection) { EmptyView()}
-            Spacer()
-            //returns user to home screen
-            //Button(action: {
-                //self.selection = "ContentView"
-                //self.presentationMode.wrappedValue.dismiss()
-            //}){
-            //ButtonView(buttonText: "Home Screen", buttonColor: Color.blue)
-            //}
         }
-            }.background(LinearGradientView()).frame(maxWidth: .infinity, maxHeight: .infinity)
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        }.navigationBarHidden(true)
     }
 }
 

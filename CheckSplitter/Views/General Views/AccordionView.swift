@@ -21,8 +21,7 @@ struct AccordionView: View {
             content: {
                 //display all the food items that belong to each payer
                 HStack {
-                    Text("FoodItems").font(.system(size: 36, weight: .semibold))
-                    Spacer()
+                    ItemView(cart: self.$cart, payers: self.$payers)                    //ItemView(cart: self.$cart, payers: self.$payers)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.leading, 40)

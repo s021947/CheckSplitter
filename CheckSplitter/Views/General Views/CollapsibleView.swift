@@ -23,9 +23,9 @@ struct CollapsibleView<Content: View>: View {
                     HStack {
                         self.label()
                         Spacer()
-                        Image(systemName: self.collapsed ? "chevron.down" : "chevron.up").resizable().frame(width: 18, height: 18).foregroundColor(Color("orange1"))
+                        Image(systemName: self.collapsed ? "chevron.down" : "chevron.up").resizable().scaledToFit().frame(width: 18, height: 18).foregroundColor(Color("orange1")).padding(.trailing, 42)
                     }
-                    .padding(.trailing, 42)//shifts the view to best location
+                    //.padding(.trailing, 42)//shifts the view to best location
                     .background(Color.white.opacity(0.01))
                 }
             )

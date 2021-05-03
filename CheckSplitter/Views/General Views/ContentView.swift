@@ -20,8 +20,8 @@ struct ContentView: View {
 
     //creates all of the necessary variables for the project, ContentView is single source of truth for all variables
     @ObservedObject var payer: Payer = Payer()
-    @State var payers: [Payer] = [Payer(), Payer(), Payer()]
-    @State var cart: [FoodItem] = [FoodItem(), FoodItem(), FoodItem()]
+    @State var payers: [Payer] = [Payer()]
+    @State var cart: [FoodItem] = [FoodItem(), FoodItem()]
     @State var item: FoodItem = FoodItem()
     //States for Setting View
     @State var modal = false
@@ -35,7 +35,7 @@ struct ContentView: View {
                         //top text
                          Text("My Order").bold().font(.custom("Helvetica Neue", size: 22)).multilineTextAlignment(.leading).padding(.trailing, 150).padding(.top, 15).foregroundColor(Color(red: 85 / 255, green: 85 / 255, blue: 85/255))
                         //text to indicate the gear is a settings option
-                        Text("Settings:")
+                        //Text("Settings:")
                          //Custom Gear Icon that leads to Settings View
                          Button(action: {
                             print("settings button pressed")
@@ -55,7 +55,7 @@ struct ContentView: View {
                      ForEach(0..<payers.count, id: \.self) { i in
                         AccordionView(payer: self.$payers[i], payers: self.$payers, cart: self.$cart)
                      }
-                    }
+                }.frame(width: 400, height: 500)
                     //when plus icon is pressed add new default payer to the list of existing payers
                      Button(action: {
                         self.payers.append(Payer(name: "", amount: 0.0, index: self.payers.count))                     })
