@@ -7,27 +7,25 @@
 //
 
 import SwiftUI
-
+//creates a struct that displays the properties of an individual Food Item
 struct FoodDisplay: View {
-    //Binding to existing FoodItem, selection String, and current Item Price
+    //Binding to existing FoodItem
     @Binding var item : FoodItem
     
     
     var body: some View {
-     
-  
+        //HStack for both of the state properties of a Food Item
         HStack{
             //displays the name of the FoodItem
-                Text(item.name).font(.system(size: 40))
-                    .foregroundColor(.black)
+                Text(item.name).font(.custom("Helvetica Neue", size: 20))
+                    .foregroundColor(.gray)
                     .minimumScaleFactor(0.0001)
-                    .lineLimit(1)
-                //displays the price of the FoodItem with the double being rounded to two decimal places
-                Text("\(item.price, specifier: "$%.2f")").font(.system(size: 40))
+                    .lineLimit(1).padding(.trailing, 100)//spaces out the text boxes appriopriately
+            //displays the price of the FoodItem with the double being rounded to two decimal places
+                Text("\(item.price, specifier: "$%.2f")").font(.custom("Helvetica Neue", size: 20))
                 .minimumScaleFactor(0.0001)
-                .lineLimit(1)
-        }.background(Color.white.opacity(0.25)).cornerRadius(20).cornerRadius(20)
-            .padding(.horizontal, 15).frame(width: 450, height: 100)//customizes backgorund of each PayerCard
+                    .lineLimit(1).foregroundColor(Color(red: 237/240, green: 164/240, blue: 172/240))
+        }
         
     
 }

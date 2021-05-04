@@ -45,7 +45,7 @@ struct ListView: View {
                     for payer in self.payers{
                         //if payer.selected{//if a payer was selected
                             //adds the value of the selected Food Item to the amount the selected payer is owed
-                            payer.updateAmount(amount: self.price)
+                            //payer.updateAmount(amount: self.price)
                         //}
                     }
                 }){

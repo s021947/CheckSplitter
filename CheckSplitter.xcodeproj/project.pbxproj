@@ -19,7 +19,7 @@
 		7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C1362630451E00EB0123 /* LinearGradientView.swift */; };
 		7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616C13A26304BDA00EB0123 /* FoodDisplay.swift */; };
 		761E7099263860CE00DCEA97 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7098263860CE00DCEA97 /* PayView.swift */; };
-		761E709B263860EF00DCEA97 /* PayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709A263860EF00DCEA97 /* PayCard.swift */; };
+		761E709B263860EF00DCEA97 /* PayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709A263860EF00DCEA97 /* PayerCard.swift */; };
 		761E70A0263866D200DCEA97 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E709F263866D200DCEA97 /* DismissView.swift */; };
 		76200A27264035E100E36AE4 /* CollapsibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76200A26264035E100E36AE4 /* CollapsibleView.swift */; };
 		76200A2926403BB100E36AE4 /* AccordionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76200A2826403BB100E36AE4 /* AccordionView.swift */; };
@@ -75,7 +75,7 @@
 		7616C1362630451E00EB0123 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
 		7616C13A26304BDA00EB0123 /* FoodDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDisplay.swift; sourceTree = "<group>"; };
 		761E7098263860CE00DCEA97 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
-		761E709A263860EF00DCEA97 /* PayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCard.swift; sourceTree = "<group>"; };
+		761E709A263860EF00DCEA97 /* PayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayerCard.swift; sourceTree = "<group>"; };
 		761E709F263866D200DCEA97 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		76200A26264035E100E36AE4 /* CollapsibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleView.swift; sourceTree = "<group>"; };
 		76200A2826403BB100E36AE4 /* AccordionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionView.swift; sourceTree = "<group>"; };
@@ -192,8 +192,9 @@
 		761E709C263860F500DCEA97 /* Payer Views */ = {
 			isa = PBXGroup;
 			children = (
+				76200A2826403BB100E36AE4 /* AccordionView.swift */,
 				763909D0263B2D3F00E301F4 /* FinalCard.swift */,
-				761E709A263860EF00DCEA97 /* PayCard.swift */,
+				761E709A263860EF00DCEA97 /* PayerCard.swift */,
 				761E7098263860CE00DCEA97 /* PayView.swift */,
 			);
 			path = "Payer Views";
@@ -212,7 +213,6 @@
 		761E709E2638612800DCEA97 /* General Views */ = {
 			isa = PBXGroup;
 			children = (
-				76200A2826403BB100E36AE4 /* AccordionView.swift */,
 				76A0272226292638001165CC /* ButtonView.swift */,
 				76200A26264035E100E36AE4 /* CollapsibleView.swift */,
 				760B0E0625FA75BD000A38C1 /* ContentView.swift */,
@@ -256,9 +256,9 @@
 		76E54258263F728200D93FD7 /* OCR Views */ = {
 			isa = PBXGroup;
 			children = (
+				76E5425D263F797B00D93FD7 /* OCRTextView.swift */,
 				76E54259263F747900D93FD7 /* ScanButton.swift */,
 				76E5425B263F754000D93FD7 /* ScanView.swift */,
-				76E5425D263F797B00D93FD7 /* OCRTextView.swift */,
 				76E5425F263F7F6D00D93FD7 /* ViewController.swift */,
 			);
 			path = "OCR Views";
@@ -433,7 +433,7 @@
 				76E54260263F7F6D00D93FD7 /* ViewController.swift in Sources */,
 				760B0E0325FA75BD000A38C1 /* AppDelegate.swift in Sources */,
 				7647397A2636FC9F0049F380 /* ListView.swift in Sources */,
-				761E709B263860EF00DCEA97 /* PayCard.swift in Sources */,
+				761E709B263860EF00DCEA97 /* PayerCard.swift in Sources */,
 				76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */,
 				76E5425C263F754000D93FD7 /* ScanView.swift in Sources */,
 				761E70A0263866D200DCEA97 /* DismissView.swift in Sources */,

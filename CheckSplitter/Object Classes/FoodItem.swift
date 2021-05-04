@@ -7,15 +7,15 @@
 //
 
 import Foundation
-//creates a struct to store each food item that will come from the image bill
-struct FoodItem{
+//creates a struct to store each food item that will come from the image scan of the bill
+struct FoodItem: Equatable{//makes struct equatable
 
 //all properties of a food object
 var name : String
 var price: Double
 
     
-    //initialize a FoodItem object 
+    //initialize a default FoodItem object 
     init(name: String = "Chicken", price: Double = 29.5){
         self.name = name
         self.price = price

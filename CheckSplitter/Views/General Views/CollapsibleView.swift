@@ -10,7 +10,7 @@ import SwiftUI
 //strucut for the collapsed view that displays a generic content are pressed
 struct CollapsibleView<Content: View>: View {
     //States for View
-    @State var label: () -> PayCard
+    @State var label: () -> PayerCard
     @State var content: () -> Content
     @State private var collapsed: Bool = true
     
