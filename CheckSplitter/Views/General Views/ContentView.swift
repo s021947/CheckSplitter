@@ -17,6 +17,7 @@ struct ContentView: View {
     
     //creates ability to go to different screens from home screens via nagivationview through selection variable which has a different string value for all views
     @State private var selection: String? = nil
+    @State private var isPresented = false
 
     //creates the array of payers for the project, ContentView is single source of truth for all variables
     @State var payers: [Payer] = [Payer(items: [FoodItem(), FoodItem()])]
@@ -71,6 +72,12 @@ struct ContentView: View {
                          Image("picButton").resizable().scaledToFit().frame(width: 100, height: 100).padding(.top, 20)
                      }.buttonStyle(PlainButtonStyle())
                     
+                    //Button("Scan Image") {
+                       // self.isPresented = true
+                    //}.sheet(isPresented: $isPresented) {
+                    //  ViewController()
+                   // }
+                    
                     //Button(action: {
                         //goes through and updates the amount due for each payer in the payer array
                        // for payer in self.payers{
@@ -81,7 +88,7 @@ struct ContentView: View {
                     //    Text("Update Amount")
                    // }
                 }
-                     
+
                      
         
                  }

@@ -26,11 +26,10 @@ struct AccordionView: View {
                 HStack {
                     ItemView(cart: self.$payer.items)
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.leading, 40)
+                .padding(.top, 20)
                 .background(Color.white)//gives padding to all of the Food Items that belong to each payer
         }
-        ).frame(maxWidth: .infinity)
+        )
     }
 }
 

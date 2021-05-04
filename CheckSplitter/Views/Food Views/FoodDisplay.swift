@@ -9,6 +9,8 @@
 import SwiftUI
 //creates a struct that displays the properties of an individual Food Item
 struct FoodDisplay: View {
+    @State var position = CGPoint(x: 140, y: 0)
+    
     //Binding to existing FoodItem
     @Binding var item : FoodItem
     
@@ -25,7 +27,12 @@ struct FoodDisplay: View {
                 Text("\(item.price, specifier: "$%.2f")").font(.custom("Helvetica Neue", size: 20))
                 .minimumScaleFactor(0.0001)
                     .lineLimit(1).foregroundColor(Color(red: 237/240, green: 164/240, blue: 172/240))
-        }
+        }.position(x: self.position.x, y: self.position.y)
+        .gesture(
+            DragGesture()
+                .onChanged({ value in
+                    self.position.y = value.location.y
+                })).frame(width: 400, height: 50)
         
     
 }

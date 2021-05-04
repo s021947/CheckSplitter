@@ -52,5 +52,11 @@ var id: Int
     func addTip(percentTip: Double){
         self.amount += (percentTip/100)*self.amount//sets the tipped portion of the users amount and adds it to the amount of money due
     }
+    //append all of the passed items to this specific payer
+    func appendItems(items: [FoodItem]){
+        for item in items{
+            self.items.append(item)
+        }
+    }
     
 }

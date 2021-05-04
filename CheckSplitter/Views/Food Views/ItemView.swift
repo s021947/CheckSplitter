@@ -11,18 +11,20 @@ import SwiftUI
 struct ItemView: View {
     //create bindings for the array of food items belonging to a certain payer
     @Binding var cart: [FoodItem]
+    
+    @State var removedItems: [FoodItem] = []
  
     var body: some View {
                 VStack(alignment: .leading){
                 ForEach(cart.indices, id: \.self) { i in
                     FoodDisplay(item: self.$cart[i])//loops through every index of the food items array and for every index i create a new FoodDisplay with information from fooditems array
                 }
-        }
+                }.frame(height: 100)
     }
 }
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(cart: Binding.constant([FoodItem]()))
+        ItemView(cart: Binding.constant([FoodItem(), FoodItem()]))
     }
 }
