@@ -41,8 +41,7 @@ struct ContentView: View {
                          }) {
                             Image("gear").resizable().frame(width: 32.0, height: 32.0).padding(.top,15).padding(.trailing,10).foregroundColor(Color.black)
                          }.sheet(isPresented: $modal){
-                            SettingView(taxEvenSplit: self.$taxEvenSplit, tipEvenSplit: self.$tipEvenSplit, modal: self.$modal)
-                            //.clearModalBackground()
+                            SettingView(taxEvenSplit: self.$taxEvenSplit, tipEvenSplit: self.$tipEvenSplit, modal: self.$modal, tipPercentageString: Binding.constant("20.0"))
                          }
                      }
                     //Divider Line that seperates view header from the list of pay cards

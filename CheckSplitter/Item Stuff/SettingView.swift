@@ -13,12 +13,13 @@ struct SettingView: View {
     @Binding var taxEvenSplit : Bool
     @Binding var tipEvenSplit : Bool
     @Binding var modal: Bool
+    @Binding  var tipPercentageString: String
     //creates a UISwitch
     let taxButt = UISwitch(frame: CGRect.zero)
     var body: some View {
         ZStack{
             //image that allows the user to dismiss this view if the x is pressed
-            Image(systemName: "xmark").resizable().scaledToFit().frame(width: 15, height: 15).padding(.trailing, 290).foregroundColor(.gray).padding(.bottom, 105).padding(.trailing, 5)
+            Image(systemName: "xmark").resizable().scaledToFit().frame(width: 15, height: 15).padding(.trailing, 290).foregroundColor(.gray).padding(.bottom, 150).padding(.trailing, 5)
             VStack{
             Button(action: {
                 //dismisses view if this button is pressed
@@ -33,18 +34,22 @@ struct SettingView: View {
                 HStack{
                     //toggle for proportional tax spliting
                     Toggle(isOn: $taxEvenSplit, label:{
-                        Text("Split Tax Proportionally").font(.custom("Helvetica Neue", size: 22)).foregroundColor(.black).padding(.trailing, 15)
+                        Text("Split Tax Proportionally").font(.custom("Helvetica Neue", size: 22)).foregroundColor(.gray).padding(.trailing, 15)
                     }) .foregroundColor(Color.blue).toggleStyle(ColoredToggleStyle(onColor: Color(red: 237/240, green: 164/240, blue: 172/240), offColor: .gray, thumbColor: .white))
                     //custom toggle color and style for this toggle
                     
                 }
-                
+
                 HStack{
                     //toggle for proportional tip spliting
                     Toggle(isOn: $tipEvenSplit, label:{
-                        Text("Split Tip Proportionally").font(.custom("Helvetica Neue", size: 22)).foregroundColor(.black).padding(.trailing, 15)
+                        Text("Split Tip Proportionally").font(.custom("Helvetica Neue", size: 22)).foregroundColor(.gray).padding(.trailing, 15)
                     }) .foregroundColor(Color.blue).toggleStyle(ColoredToggleStyle(onColor: Color(red: 237/240, green: 164/240, blue: 172/240), offColor: .gray, thumbColor: .white))
                     //custom toggle color and style for this toggle
+                }
+                HStack{
+                    Text("Tip Percentage").font(.custom("Helvetica Neue", size: 22)).foregroundColor(Color.gray).frame(width: 150).padding(.leading, 40)
+            TextField("Tip% ", text: self.$tipPercentageString).font(.custom("Helvetica Neue", size: 22)).foregroundColor(Color(red: 237/240, green: 164/240, blue: 172/240)).padding(.leading, 90)
                 }
             }
         }
@@ -79,6 +84,6 @@ struct ColoredToggleStyle: ToggleStyle {
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView(taxEvenSplit: Binding.constant(true), tipEvenSplit: Binding.constant(true), modal: Binding.constant(true))
+        SettingView(taxEvenSplit: Binding.constant(true), tipEvenSplit: Binding.constant(true), modal: Binding.constant(true), tipPercentageString: Binding.constant("20.0"))
     }
 }

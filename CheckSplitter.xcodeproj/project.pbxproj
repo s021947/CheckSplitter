@@ -27,9 +27,14 @@
 		7647397A2636FC9F0049F380 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764739792636FC9F0049F380 /* ListView.swift */; };
 		76768830262DD6520014DFA4 /* Payer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676882F262DD6520014DFA4 /* Payer.swift */; };
 		76768836262E07820014DFA4 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76768835262E07820014DFA4 /* ItemView.swift */; };
+		768F31882641B70E00A203A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F31872641B70E00A203A3 /* Item.swift */; };
+		768F318A2641B76400A203A3 /* ItemDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F31892641B76400A203A3 /* ItemDisplay.swift */; };
+		768F318C2641B8C100A203A3 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F318B2641B8C100A203A3 /* OrderView.swift */; };
 		76A0272326292638001165CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0272226292638001165CC /* ButtonView.swift */; };
+		76C450162642198100A44E83 /* ActionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C450152642198100A44E83 /* ActionMenu.swift */; };
 		76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C55BF32628BA96007982AA /* ImagePicker.swift */; };
 		76D681D5262F220C0085A887 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D681D4262F220C0085A887 /* FoodItem.swift */; };
+		76DE9D3026441DF6002F1774 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DE9D2F26441DF6002F1774 /* ContentView2.swift */; };
 		76E5425A263F747900D93FD7 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E54259263F747900D93FD7 /* ScanButton.swift */; };
 		76E5425C263F754000D93FD7 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5425B263F754000D93FD7 /* ScanView.swift */; };
 		76E5425E263F797B00D93FD7 /* OCRTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5425D263F797B00D93FD7 /* OCRTextView.swift */; };
@@ -83,9 +88,14 @@
 		764739792636FC9F0049F380 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7676882F262DD6520014DFA4 /* Payer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payer.swift; sourceTree = "<group>"; };
 		76768835262E07820014DFA4 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		768F31872641B70E00A203A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		768F31892641B76400A203A3 /* ItemDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplay.swift; sourceTree = "<group>"; };
+		768F318B2641B8C100A203A3 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		76A0272226292638001165CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		76C450152642198100A44E83 /* ActionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMenu.swift; sourceTree = "<group>"; };
 		76C55BF32628BA96007982AA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		76D681D4262F220C0085A887 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		76DE9D2F26441DF6002F1774 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		76E54259263F747900D93FD7 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
 		76E5425B263F754000D93FD7 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		76E5425D263F797B00D93FD7 /* OCRTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRTextView.swift; sourceTree = "<group>"; };
@@ -152,6 +162,7 @@
 		760B0E0125FA75BD000A38C1 /* CheckSplitter */ = {
 			isa = PBXGroup;
 			children = (
+				768F31862641B6DE00A203A3 /* Item Stuff */,
 				76D681DA262F37280085A887 /* Views */,
 				76D681D9262F37110085A887 /* Delegates */,
 				76D681D8262F34AF0085A887 /* Object Classes */,
@@ -218,9 +229,21 @@
 				760B0E0625FA75BD000A38C1 /* ContentView.swift */,
 				761E709F263866D200DCEA97 /* DismissView.swift */,
 				7616C1362630451E00EB0123 /* LinearGradientView.swift */,
-				76E54261263FA79E00D93FD7 /* SettingView.swift */,
 			);
 			path = "General Views";
+			sourceTree = "<group>";
+		};
+		768F31862641B6DE00A203A3 /* Item Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				768F318B2641B8C100A203A3 /* OrderView.swift */,
+				768F31872641B70E00A203A3 /* Item.swift */,
+				768F31892641B76400A203A3 /* ItemDisplay.swift */,
+				76C450152642198100A44E83 /* ActionMenu.swift */,
+				76E54261263FA79E00D93FD7 /* SettingView.swift */,
+				76DE9D2F26441DF6002F1774 /* ContentView2.swift */,
+			);
+			path = "Item Stuff";
 			sourceTree = "<group>";
 		};
 		76D681D8262F34AF0085A887 /* Object Classes */ = {
@@ -436,8 +459,11 @@
 				761E709B263860EF00DCEA97 /* PayerCard.swift in Sources */,
 				76C55BF42628BA96007982AA /* ImagePicker.swift in Sources */,
 				76E5425C263F754000D93FD7 /* ScanView.swift in Sources */,
+				76DE9D3026441DF6002F1774 /* ContentView2.swift in Sources */,
+				768F31882641B70E00A203A3 /* Item.swift in Sources */,
 				761E70A0263866D200DCEA97 /* DismissView.swift in Sources */,
 				76768836262E07820014DFA4 /* ItemView.swift in Sources */,
+				768F318A2641B76400A203A3 /* ItemDisplay.swift in Sources */,
 				76A0272326292638001165CC /* ButtonView.swift in Sources */,
 				763909D1263B2D3F00E301F4 /* FinalCard.swift in Sources */,
 				7616C13B26304BDA00EB0123 /* FoodDisplay.swift in Sources */,
@@ -446,6 +472,8 @@
 				7616C1372630451E00EB0123 /* LinearGradientView.swift in Sources */,
 				760B0E0725FA75BD000A38C1 /* ContentView.swift in Sources */,
 				76E54262263FA79E00D93FD7 /* SettingView.swift in Sources */,
+				76C450162642198100A44E83 /* ActionMenu.swift in Sources */,
+				768F318C2641B8C100A203A3 /* OrderView.swift in Sources */,
 				76E5425A263F747900D93FD7 /* ScanButton.swift in Sources */,
 				761E7099263860CE00DCEA97 /* PayView.swift in Sources */,
 				76200A27264035E100E36AE4 /* CollapsibleView.swift in Sources */,
